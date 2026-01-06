@@ -28,7 +28,7 @@ export default function Hero() {
                 </h1>
 
                 <p className="text-lg md:text-xl text-[#525252] max-w-2xl mx-auto mb-10 leading-relaxed">
-                  AI-powered label analysis using OCR, NOVA classification, and
+                  AI-powered label analysis using OCR, NOVA classification, calorie estimation, meal planning, recipe generation, personal nutritionist agent and
                   explainable nutrition insights.
                 </p>
 
