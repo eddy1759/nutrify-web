@@ -57,6 +57,7 @@ export default function DownloadModal({
           className="w-full max-w-md rounded-2xl bg-white shadow-2xl p-6 relative"
         >
           <button
+            title="waitlist modal close"
             onClick={onClose}
             className="absolute right-4 top-4 text-neutral-400 hover:text-neutral-600"
           >
