@@ -20,7 +20,19 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
+                className="flex flex-col items-center" // Added flex-col/center to ensure badge is centered
               >
+                {/* --- START: YC Badge --- */}
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 mb-8 rounded-full bg-white border border-gray-200 shadow-sm hover:shadow-md hover:scale-105 transition-all duration-300 cursor-default">
+                  <div className="flex items-center justify-center w-5 h-5 rounded-[3px] bg-[#F26522] text-white font-bold text-[10px] leading-none">
+                    Y
+                  </div>
+                  <span className="text-sm font-medium text-gray-600">
+                    Not backed by Y Combinator
+                  </span>
+                </div>
+                {/* --- END: YC Badge --- */}
+
                 <h1 className="text-[clamp(2.5rem,6vw,4.5rem)] font-semibold text-[#0a0a0a] tracking-[-0.02em] leading-[1.1] mb-6">
                   Nutrition intelligence,
                   <br />
@@ -28,8 +40,9 @@ export default function Hero() {
                 </h1>
 
                 <p className="text-lg md:text-xl text-[#525252] max-w-2xl mx-auto mb-10 leading-relaxed">
-                  AI-powered label analysis using OCR, NOVA classification, calorie estimation, meal planning, recipe generation, personal nutritionist agent and
-                  explainable nutrition insights.
+                  AI-powered label analysis using OCR, NOVA classification,
+                  calorie estimation, meal planning, recipe generation, personal
+                  nutritionist agent and explainable nutrition insights.
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
